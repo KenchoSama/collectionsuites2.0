@@ -21,19 +21,21 @@ export function LocationSection({
   contentPosition = "bottom",
 }: LocationSectionProps) {
   return (
-    <section className="relative h-screen">
+    <section className="relative h-[70vh] md:h-[75vh]">
       <Image
         src={imageSrc}
         alt={imageAlt}
         fill
+        priority
         className="object-cover"
+        sizes="100vw"
       />
+
       <div className="absolute inset-0 bg-black/30" />
 
       <div
-        className={`absolute inset-0 flex flex-col px-6 md:px-12 ${
-          contentPosition === "bottom" ? "justify-end pb-16" : "justify-center"
-        }`}
+        className={`absolute inset-0 flex flex-col px-6 md:px-12 ${contentPosition === "bottom" ? "justify-end pb-12 md:pb-16" : "justify-center"
+          }`}
       >
         <h2 className="text-white font-serif text-5xl md:text-6xl font-light tracking-widest mb-6 text-balance">
           {title.split("\n").map((line, i) => (
@@ -43,11 +45,13 @@ export function LocationSection({
             </span>
           ))}
         </h2>
+
         {description && (
           <p className="text-white text-xs leading-relaxed max-w-2xl mb-8">
             {description}
           </p>
         )}
+
         {ctaHref ? (
           <Link
             href={ctaHref}

@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ================= ROOT THEME VARIABLES ================= */
 :root {
   --background: oklch(0.968 0 0);
   --foreground: oklch(0.145 0 0);
@@ -26,10 +27,16 @@
   --radius: 0rem;
 }
 
+/* ================= THEME SYSTEM ================= */
 @theme inline {
   --font-sans: var(--font-montserrat), 'Montserrat', sans-serif;
   --font-serif: var(--font-cinzel), 'Cinzel', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+
+  /* Custom Fonts */
+  --font-gill: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -49,19 +56,46 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+
+  /* Radius */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* Brand colors */
   --color-amber-700: oklch(0.555 0.163 48.998);
   --color-amber-300: oklch(0.848 0.15 84.429);
 }
 
+/* ================= BASE STYLES ================= */
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* ================= AVIANO FONT ================= */
+@font-face {
+  font-family: "Aviano Sans";
+  src: url("/fonts/AvianoSans/AvianoSans-Regular.woff2") format("woff2"),
+    url("/fonts/AvianoSans/AvianoSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ================= UTILITY CLASSES ================= */
+@layer utilities {
+  .font-aviano {
+    font-family: "Aviano Sans", sans-serif;
+  }
+
+  .font-gill {
+    font-family: var(--font-gill);
   }
 }

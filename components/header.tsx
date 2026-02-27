@@ -2,13 +2,13 @@
 
 import { useState, useCallback } from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
-import { Logo } from "@/components/logo"
+import Image from "next/image"
+import { Menu, X, ArrowRight } from "lucide-react"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const scrollToConnect = useCallback(() => {
+  const scrollToContact = useCallback(() => {
     const el = document.getElementById("connect")
     if (el) {
       el.scrollIntoView({ behavior: "smooth" })
@@ -19,83 +19,109 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" aria-label="Collection Suites Home">
-          <Logo size={40} />
+
+        {/* Left: Logo */}
+        <Link href="/" aria-label="Collection Suites Home" className="z-10">
+          <Image
+            src="/CollectionSuiteLogo.png"
+            alt="Collection Suites Logo"
+            width={140}
+            height={40}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          <nav className="flex items-center gap-8 text-white text-sm tracking-widest">
-            <Link
-              href="/about"
-              className="hover:text-amber-300 transition-colors uppercase"
-            >
-              About Us
-            </Link>
+        {/* Center: Navigation */}
+        <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center gap-14 text-[#DEBE8F] font-gill text-base tracking-widest">
 
-            {/* 🔴 NEW Origins Button */}
-            <Link
-              href="/origins"
-              className="hover:text-amber-300 transition-colors uppercase"
-            >
-              Origins
-            </Link>
+          {/* ✅ Updated Suites link */}
+          <Link
+            href="/availableSuite"
+            className="hover:text-white transition-colors"
+          >
+            Suites
+          </Link>
 
-            <button
-              onClick={scrollToConnect}
-              className="hover:text-amber-300 transition-colors uppercase cursor-pointer"
-            >
-              Connect
-            </button>
-          </nav>
+          <Link href="/features" className="hover:text-white transition-colors">
+            Features
+          </Link>
+
+          <Link href="/about" className="hover:text-white transition-colors">
+            About
+          </Link>
 
           <button
-            className="text-white hover:text-amber-300 transition-colors"
-            aria-label="Open menu"
+            onClick={scrollToContact}
+            className="hover:text-white transition-colors cursor-pointer"
+          >
+            Contact
+          </button>
+        </nav>
+
+        {/* Right: Members + Menu */}
+        <div className="flex items-center gap-6">
+
+          <a
+            href="https://my.collection-suites.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:flex items-center gap-2 text-[#DEBE8F] font-gill text-base tracking-widest hover:text-white transition-colors"
+          >
+            Members
+            <ArrowRight className="w-5 h-5" />
+          </a>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="text-[#DEBE8F] hover:text-white transition-colors md:hidden"
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <Menu className="w-6 h-6" />
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
-
-        {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden text-white hover:text-amber-300 transition-colors"
-          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? (
-            <X className="w-6 h-6" />
-          ) : (
-            <Menu className="w-6 h-6" />
-          )}
-        </button>
       </div>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <nav className="md:hidden bg-black/95 border-t border-white/10 px-6 py-6 flex flex-col gap-4 text-white text-sm tracking-widest">
+        <nav className="md:hidden bg-black/95 border-t border-white/10 px-6 py-6 flex flex-col gap-5 text-[#DEBE8F] font-gill text-base tracking-widest">
+
           <Link
-            href="/about"
-            className="hover:text-amber-300 transition-colors uppercase"
+            href="/availableSuite"
+            className="hover:text-white transition-colors"
           >
-            About Us
+            Suites
           </Link>
 
-          {/* 🔴 NEW Origins Button */}
-          <Link
-            href="/origins"
-            className="hover:text-amber-300 transition-colors uppercase"
-          >
-            Origins
+          <Link href="/features" className="hover:text-white transition-colors">
+            Features
+          </Link>
+
+          <Link href="/about" className="hover:text-white transition-colors">
+            About
           </Link>
 
           <button
-            onClick={scrollToConnect}
-            className="hover:text-amber-300 transition-colors uppercase cursor-pointer text-left"
+            onClick={scrollToContact}
+            className="hover:text-white transition-colors text-left"
           >
-            Connect
+            Contact
           </button>
+
+          <a
+            href="https://my.collection-suites.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            Members
+            <ArrowRight className="w-5 h-5" />
+          </a>
         </nav>
       )}
     </header>
