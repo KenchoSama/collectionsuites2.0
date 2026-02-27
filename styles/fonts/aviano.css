@@ -1,0 +1,29 @@
+/* Aviano Sans Font Face */
+@font-face {
+  font-family: "Aviano Sans";
+  src: url("/fonts/AvianoSans-Regular.woff2") format("woff2"),
+       url("/fonts/AvianoSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aviano Sans";
+  src: url("/fonts/AvianoSans-Bold.woff2") format("woff2"),
+       url("/fonts/AvianoSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Utility class you can apply anywhere */
+.aviano {
+  font-family: "Aviano Sans", sans-serif;
+  letter-spacing: 0.25em;
+}
+
+.gill {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  letter-spacing: 0.08em;
+}

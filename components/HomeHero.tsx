@@ -1,4 +1,5 @@
 import Image from "next/image"
+import "@/styles/fonts/aviano.css"
 
 export function HomeHero() {
   return (
@@ -23,12 +24,12 @@ export function HomeHero() {
         <div className="absolute inset-0 flex flex-col items-center justify-end px-6 pb-12 md:pb-16 gap-4">
 
           {/* Main Tagline */}
-          <h1 className="text-white font-aviano tracking-[0.35em] text-2xl md:text-3xl text-center">
+          <h1 className="aviano text-white tracking-[0.35em] text-2xl md:text-3xl text-center">
             COLLECT. CONNECT. PROTECT.
           </h1>
 
-          {/* 🔥 New "ONLY AT" line */}
-          <p className="text-white font-aviano tracking-[0.3em] text-xs md:text-sm text-center">
+          {/* ONLY AT */}
+          <p className="aviano text-white tracking-[0.3em] text-xs md:text-sm text-center">
             ONLY AT
           </p>
 
@@ -50,10 +51,7 @@ export function HomeHero() {
         style={{ backgroundColor: "#D7B788" }}
       >
         <p className="max-w-3xl text-center text-black/80 text-sm md:text-base leading-relaxed tracking-wide">
-          Collection Suites is a private community designed for collectors who demand more than storage.
-          Each suite blends secure vehicle preservation with modern luxury living — featuring climate-controlled environments,
-          premium finishes, and curated spaces to showcase and enjoy your collection. From Miami to Palm Beach, our developments
-          bring together craftsmanship, privacy, and lifestyle into one destination built for passion, performance, and connection.
+          Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit 
         </p>
       </div>
     </section>
