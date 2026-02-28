@@ -5,6 +5,15 @@ import { LocationSection } from "@/components/location-section"
 import { SuitesGrid } from "@/components/suites-grid"
 import { ContactForm } from "@/components/contact-form"
 import { Footer } from "@/components/footer"
+import AvailableMiami from "@/components/available/AvailableMiami"
+import AvailablePalmBeach from "@/components/available/AvailablePalmBeach"
+import AvailableHero from "@/components/available/AvailableHero"
+import AvailableSales from "@/components/available/AvailableSales"
+import AvailableSuiteGrid from "@/components/available/AvailableSuitesGrid"
+import Connect from "@/components/connect"
+import Footer2 from "@/components/Footer2"
+
+
 
 const suites = [
   { name: "SUITE", number: "001", sqft: "2,869 Sq.Ft." },
@@ -16,39 +25,19 @@ export default function Home() {
   return (
     <main>
       <Header />
-
       {/* ✅ HERO IMAGE UPDATED */}
-      <HeroSection
-        imageSrc="/OrangeCarRoom.png"
-        imageAlt="Luxury collector suite with orange Lamborghini and exotic cars on display"
-      />
 
+      <AvailableHero />
       <MapSection />
 
-      {/* ✅ MIAMI IMAGE UPDATED */}
-      <LocationSection
-        title="MIAMI"
-        description="Our Flagship Biscayne Complex Boasts over 400,000 square feet of prime real estate, featuring 164 luxury suites. www.go-collectionsuitemiami.com"
-        imageSrc="/wideMiami.png"
-        imageAlt="Miami luxury development exterior"
-        contentPosition="bottom"
-        ctaHref="/suites"
-      />
-
-      {/* ✅ PALM BEACH IMAGE UPDATED */}
-      <LocationSection
-        title={"PALM\nBEACH"}
-        imageSrc="/widePalmBeach.png"
-        imageAlt="Palm Beach luxury development exterior"
-        contentPosition="center"
-        ctaHref="/suites/PalmBeachSuite"
-      />
-
-      <SuitesGrid suites={suites} />
-
-      <ContactForm />
-
-      <Footer />
+      <AvailableMiami />
+      <AvailablePalmBeach />
+      <AvailableSales />
+      <AvailableSuiteGrid />
+      <div id="connect">
+        <Connect />
+      </div>
+      <Footer2 />
     </main>
   )
 }
