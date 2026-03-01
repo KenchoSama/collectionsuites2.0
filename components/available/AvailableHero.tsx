@@ -35,14 +35,6 @@ export default function AvailableHero() {
             EXPLORE THE VISION AND CRAFTSMANSHIP BEHIND COLLECTIONSUITES
           </p>
 
-          {/* CTA */}
-          <Link
-            href="/availableSuite"
-            className="inline-block bg-[#9c8463] hover:bg-[#b89a74] transition px-8 md:px-10 py-3 text-xs md:text-sm tracking-widest uppercase text-white"
-          >
-            Discover Our Luxury Suites
-          </Link>
-
         </div>
       </div>
 

@@ -19,7 +19,6 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-
         {/* Left: Logo */}
         <Link href="/" aria-label="Collection Suites Home" className="z-10">
           <Image
@@ -34,16 +33,12 @@ export function Header() {
 
         {/* Center: Navigation */}
         <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center gap-14 text-[#DEBE8F] font-gill text-base tracking-widest">
-
-          {/* ✅ Updated Suites link */}
-          <Link
-            href="/availableSuite"
-            className="hover:text-white transition-colors"
-          >
+          <Link href="/availableSuite" className="hover:text-white transition-colors">
             Suites
           </Link>
 
-          <Link href="/features" className="hover:text-white transition-colors">
+          {/* ✅ Features now routes to /events */}
+          <Link href="/events" className="hover:text-white transition-colors">
             Features
           </Link>
 
@@ -61,7 +56,6 @@ export function Header() {
 
         {/* Right: Members + Menu */}
         <div className="flex items-center gap-6">
-
           <a
             href="https://my.collection-suites.com"
             target="_blank"
@@ -78,11 +72,7 @@ export function Header() {
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            {mobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
@@ -90,15 +80,12 @@ export function Header() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <nav className="md:hidden bg-black/95 border-t border-white/10 px-6 py-6 flex flex-col gap-5 text-[#DEBE8F] font-gill text-base tracking-widest">
-
-          <Link
-            href="/availableSuite"
-            className="hover:text-white transition-colors"
-          >
+          <Link href="/availableSuite" className="hover:text-white transition-colors">
             Suites
           </Link>
 
-          <Link href="/features" className="hover:text-white transition-colors">
+          {/* ✅ Features now routes to /events */}
+          <Link href="/events" className="hover:text-white transition-colors">
             Features
           </Link>
 
@@ -106,10 +93,7 @@ export function Header() {
             About
           </Link>
 
-          <button
-            onClick={scrollToContact}
-            className="hover:text-white transition-colors text-left"
-          >
+          <button onClick={scrollToContact} className="hover:text-white transition-colors text-left">
             Contact
           </button>
 
