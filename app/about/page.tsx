@@ -1,14 +1,15 @@
 import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { ContactForm } from "@/components/contact-form"
-import { OriginsSection } from "@/components/about/origins-section"
-import { HistorySection } from "@/components/about/history-section"
-import { CheckeredFlag } from "@/components/about/checkered-flag"
-import { ClassicCarsSection } from "@/components/about/classic-cars-section"
-import { TodaySection } from "@/components/about/today-section"
-import { TeamSection } from "@/components/about/team-section"
-import { PressSection } from "@/components/about/press-section"
 import type { Metadata } from "next"
+import AboutHero from "@/components/about/AboutHero"
+import AboutHistory from "@/components/about/AboutHistory"
+import AboutToday from "@/components/about/AboutToday"
+import AboutTeam from "@/components/about/AboutTeam"
+import Footer2 from "@/components/Footer2"
+import Connect from "@/components/connect"
+import { PressSection } from "@/components/about/AboutPress"
+
+
+
 
 export const metadata: Metadata = {
   title: "Collection Suites - Our Story",
@@ -20,15 +21,15 @@ export default function AboutPage() {
   return (
     <main>
       <Header />
-      <OriginsSection />
-      <HistorySection />
-      <CheckeredFlag />
-      <ClassicCarsSection />
-      <TodaySection />
-      <TeamSection />
-      <PressSection />
-      <ContactForm />
-      <Footer />
+      <AboutHero /> 
+      <AboutHistory />
+      <AboutToday /> 
+      <AboutTeam />
+      <PressSection /> 
+      <div id="connect">
+        <Connect />
+      </div>
+      <Footer2 />
     </main>
   )
 }

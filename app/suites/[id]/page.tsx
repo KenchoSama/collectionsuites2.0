@@ -1,9 +1,9 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import { Header } from "@/components/header"
-import { SuiteDetails } from "@/components/suites/suite-details"
-import { ContactForm } from "@/components/contact-form"
-import { Footer } from "@/components/footer"
+import Connect from "@/components/connect"
+import Footer2 from "@/components/Footer2"
+import { SuiteDetailsSplit } from "@/components/suites/SuiteDetailsSplit"
 
 // Suite data keyed by suite number
 const suitesData: Record<
@@ -80,10 +80,10 @@ export default async function SuiteDetailPage({
     <main>
       <Header />
 
-      {/* Hero Section */}
-      <section className="relative h-[70vh] md:h-[85vh]">   {/* 🔴 CHANGED */}
+      {/* Hero Section (unchanged) */}
+      <section className="relative h-[70vh] md:h-[85vh]">
         <Image
-          src="/images/BANNER.png"   // 🔴 CHANGED HERE
+          src="/images/BANNER.png"
           alt={`Suite ${id} interior`}
           fill
           className="object-cover"
@@ -91,18 +91,19 @@ export default async function SuiteDetailPage({
         />
       </section>
 
-      {/* Suite Details */}
-      <SuiteDetails
+      {/* NEW middle split section */}
+      <SuiteDetailsSplit
         suiteNumber={id}
         sqft={suite.sqft}
         price={suite.price}
         levels={suite.levels}
+        maxCarCapacity={suite.maxCarCapacity}
         description={suite.description}
         galleryImages={suite.galleryImages}
       />
 
-      <ContactForm />
-      <Footer />
+      <Connect />
+      <Footer2 />
     </main>
   )
 }
