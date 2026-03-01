@@ -15,7 +15,9 @@ export default function EventsPage() {
       <EventsThankYou /> 
 
       {/* Optional sections below */}
-      <Connect />
+      <div id="connect">
+              <Connect />
+            </div>
       <Footer2 />
     </main>
   )

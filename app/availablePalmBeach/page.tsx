@@ -22,7 +22,9 @@ export default function SuitesPage() {
       <PalmBeachHero />
       <PalmBeachSuites />
       <PalmBeachAvailableSuiteGrid />
-      <Connect />
+      <div id="connect">
+              <Connect />
+            </div>
       <Footer2 /> 
 
 

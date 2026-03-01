@@ -10,10 +10,11 @@ export default function StoryPage() {
     <main className="bg-white text-black">
       <Header />
       <StoryHero />
-            <StoryCar />
-
+      <StoryCar />
       <StoryToday />
-      <Connect />
+      <div id="connect">
+              <Connect />
+            </div>
       <Footer2 />
     </main>
   )

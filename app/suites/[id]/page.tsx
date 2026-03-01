@@ -102,7 +102,9 @@ export default async function SuiteDetailPage({
         galleryImages={suite.galleryImages}
       />
 
-      <Connect />
+      <div id="connect">
+              <Connect />
+            </div>
       <Footer2 />
     </main>
   )
