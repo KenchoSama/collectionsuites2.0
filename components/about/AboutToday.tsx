@@ -37,13 +37,12 @@ export default function AboutToday() {
             our vision to the world.
           </p>
 
-          {/* Button */}
-          <Link
-            href="/about"
-            className="inline-block mt-8 bg-[#9C835D] hover:bg-[#b89a74] transition px-10 py-3 text-sm tracking-widest uppercase text-white"
-          >
-            Our Story
-          </Link>
+            <Link
+                href="/story"
+                className="inline-block mt-8 bg-[#9C835D] hover:bg-[#b89a74] transition px-10 py-3 text-sm tracking-widest uppercase text-white"
+                >
+                Our Story
+            </Link>
 
         </div>
       </div>

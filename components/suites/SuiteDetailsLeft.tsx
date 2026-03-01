@@ -71,24 +71,24 @@ export function SuiteDetailsLeft({
         ))}
       </div>
 
-      {/* Gallery (simple slider-like layout to match mock) */}
-      <div className="mt-8">
-        <div className="relative w-full aspect-[16/9] overflow-hidden border border-black/10">
-          <Image
-            src={galleryImages?.[0]?.src || "/images/suite-607-gallery.jpg"}
-            alt={galleryImages?.[0]?.alt || "Suite gallery"}
-            fill
-            className="object-cover"
-          />
-          {/* minimal arrows (visual only) */}
-          <div className="absolute inset-y-0 left-0 flex items-center px-3 text-white/90">
-            <span className="text-xl select-none">‹</span>
-          </div>
-          <div className="absolute inset-y-0 right-0 flex items-center px-3 text-white/90">
-            <span className="text-xl select-none">›</span>
-          </div>
-        </div>
+ {/* Gallery (simple slider-like layout to match mock) */}
+<div className="mt-8">
+    <div className="relative w-full aspect-[16/9] overflow-hidden border border-black/10">
+      <Image
+        src={galleryImages?.[0]?.src || "/placeholder.png"}
+        alt={galleryImages?.[0]?.alt || "OrangeCarRoom"}
+        fill
+        className="object-cover"
+        priority
+      />
+      <div className="absolute inset-y-0 left-0 flex items-center px-3 text-white/90">
+        <span className="text-xl select-none">‹</span>
       </div>
+      <div className="absolute inset-y-0 right-0 flex items-center px-3 text-white/90">
+        <span className="text-xl select-none">›</span>
+      </div>
+    </div>
+</div>
     </div>
   )
 }
