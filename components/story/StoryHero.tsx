@@ -16,7 +16,7 @@ export default function StoryHero() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-20">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           
           {/* LEFT SIDE */}
@@ -53,7 +53,7 @@ export default function StoryHero() {
               </p>
               <p>
                 Traditional storage often turns that into loss. It reduces preservation to square
-                footage, where climate control is an amenity instead of an inspiration, and security
+                 footage, where climate control is an amenity instead of an inspiration, and security
                 becomes surveillance rather than sanctuary.
               </p>
             </div>
@@ -61,7 +61,7 @@ export default function StoryHero() {
 
           {/* RIGHT SIDE COLLAGE */}
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative z-30 w-[620px] h-[720px] lg:w-[700px] lg:h-[820px] flex items-end">
+            <div className="relative z-30 w-[620px] h-[750px] lg:w-[700px] lg:h-[820px] flex items-end">
                 <Image
                 src="/StoryHeroRight.png"
                 alt="Historic collage"
@@ -76,7 +76,6 @@ export default function StoryHero() {
       </div>
 
       {/* Bottom accent car (optional visual detail) */}
-      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/20 to-transparent" />
     </section>
   )
 }
