@@ -6,31 +6,30 @@ import "@/styles/fonts/aviano.css"
 
 export default function AvailableHero() {
   return (
-    <section className="relative w-full h-[clamp(480px,75vh,820px)] overflow-hidden">
+    <section className="relative w-full">
 
-      {/* Background */}
+      {/* Background image (responsive like map) */}
       <Image
         src="/OrangeCarRoom.png"
         alt="Available Suites"
-        fill
-        priority
-        className="object-cover object-center"
+        width={1920}
+        height={1080}
+        className="w-full h-auto block"
         sizes="100vw"
+        priority
       />
 
-      {/* Dark gradient overlay (left side readability) */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 h-full w-full flex items-center justify-start">
+      <div className="absolute inset-0 flex items-center">
         <div className="max-w-xl px-8 md:px-20 text-left">
 
-          {/* Title */}
           <h1 className="aviano text-white text-4xl md:text-6xl font-light tracking-[0.25em] mb-6 leading-tight">
             AVAILABLE <br /> SUITES
           </h1>
 
-          {/* Subtitle */}
           <p className="gill text-[#DEBE8F] text-xs md:text-sm leading-relaxed mb-8 tracking-wide max-w-md">
             EXPLORE THE VISION AND CRAFTSMANSHIP BEHIND COLLECTIONSUITES
           </p>
