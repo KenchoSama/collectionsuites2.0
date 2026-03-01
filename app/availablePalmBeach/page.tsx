@@ -1,8 +1,4 @@
 import { Header } from "@/components/header"
-import { ContactForm } from "@/components/contact-form"
-import { Footer } from "@/components/footer"
-import { AvailableSuitesSection } from "@/components/suites/available-suites-section"
-import Image from "next/image"
 import PalmBeachHero from "@/components/availablePalmBeach/PalmBeachHero"
 import PalmBeachSuites from "@/components/availablePalmBeach/PalmBeachSuites"
 import Connect from "@/components/connect"
