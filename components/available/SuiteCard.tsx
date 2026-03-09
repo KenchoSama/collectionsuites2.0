@@ -18,7 +18,7 @@ export function SuiteCard({ suite }: { suite: Suite }) {
       {/* Top Row */}
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h3 className="aviano text-white text-xl tracking-[0.2em]">
+          <h3 className="montserrat-medium text-white text-xl tracking-[0.2em]">
             {suite.name}
           </h3>
 

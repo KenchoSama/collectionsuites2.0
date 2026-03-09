@@ -1,5 +1,4 @@
 import Image from "next/image"
-import "@/styles/fonts/aviano.css"
 
 export function HomeHero() {
   return (
@@ -25,8 +24,7 @@ export function HomeHero() {
 
           {/* Main Tagline */}
           <h1 className="aviano text-white tracking-[0.35em] text-2xl md:text-3xl text-center">
-            COLLECT. CONNECT. PROTECT.
-          </h1>
+          Revolutionizing the Art of Collecting          </h1>
 
           {/* ONLY AT */}
           <p className="aviano text-white tracking-[0.3em] text-xs md:text-sm text-center">
@@ -51,8 +49,7 @@ export function HomeHero() {
         style={{ backgroundColor: "#D7B788" }}
       >
         <p className="max-w-3xl text-center text-black/80 text-sm md:text-base leading-relaxed tracking-wide">
-          Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit 
-        </p>
+Private luxury suites in Miami and Palm Beach, designed to protect, showcase, and enjoy your most prized collections within an exclusive, collector-driven ecosystem.         </p>
       </div>
     </section>
   )

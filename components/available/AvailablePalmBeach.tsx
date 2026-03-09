@@ -30,11 +30,11 @@ export default function AvailablePalmBeach() {
           </h2>
 
           {/* Description */}
-          <p className="gill text-[#DEBE8F] text-xs md:text-sm leading-relaxed mb-6 max-w-md">
-            Our Palm Beach flagship offers premier collector suites in one of the
-            most sought-after luxury destinations. Secure your space among an
-            exclusive community of enthusiasts.
+<p className="gil text-white base md:text-lg leading-relaxed mb-6 tracking-wide max-w-md">            A refined expansion created for a market that values heritage, discretion, and timeless sophistication.
           </p>
+<p className="gil text-[10px] md:text-xs text-white leading-relaxed mb-8 tracking-wide max-w-md">
+  Currently under construction. Presale opportunities now available with delivery anticipated early 2027.
+</p>
 
           {/* CTA */}
           <Link

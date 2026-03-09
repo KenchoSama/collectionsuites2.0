@@ -30,11 +30,19 @@ export default function AvailableMiami() {
             MIAMI
           </h2>
 
-          <p className="gill text-[#DEBE8F] text-xs md:text-sm leading-relaxed mb-6">
+          <p className="gil text-white text-xs md:text-sm leading-relaxed mb-8 tracking-wide max-w-md">
             Our flagship Miami Complex (Phase I) offers over [XX,XXX] square
             feet across 38 exclusive suites. Now, we’re accelerating to meet
             demand.
           </p>
+          <h2 className="aviano text-white text-3xl md:text-5xl font-light tracking-[0.25em] mb-5">
+            MIAMI 2.0
+          </h2>
+
+          <p className="gil text-white text-xs md:text-sm leading-relaxed mb-8 tracking-wide max-w-md">
+            An expansion of our existing property, introducing 14 new luxury suites with enhanced amenities, larger spaces, and a shared clubhouse experience designed for connection and lifestyle.
+          </p>
+          
 
           <Link
             href="/availableMiami"

@@ -9,9 +9,21 @@
 /* AVIANO FONT */
 /* ============================= */
 
+/* Aviano Light */
 @font-face {
   font-family: "Aviano";
-  src: url("/fonts/aviano/AvianoSansRegular.otf") format("opentype");
+  src: url("/fonts/aviano/AvianoSans-Light.woff2") format("woff2"),
+       url("/fonts/aviano/AvianoSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Aviano Regular */
+@font-face {
+  font-family: "Aviano";
+  src: url("/fonts/aviano/AvianoSans-Regular.woff2") format("woff2"),
+       url("/fonts/aviano/AvianoSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;

@@ -16,10 +16,12 @@ export default function AboutHistory() {
         </h2>
 
         {/* Right Description */}
-        <p className="gill text-black/70 text-sm md:text-base max-w-md leading-relaxed">
-          CollectionSuites was never built to store cars. It was built to safeguard
-          heritage, because what we preserve today becomes the legacy we pass on
-          to future generations.
+<p className="gill text-black/70 text-sm md:text-base max-w-2xl leading-relaxed tracking-wide">         
+ CollectionSuites was born to redefine the art of collecting. <br /> 
+<br />
+After decades immersed in the world of rare and significant acquisitions, Juan Manuel Fayen recognized that the industry was focused on storage, when it should have been focused on stewardship. He envisioned a sanctuary that didn't just house objects, but honored the passion behind them. <br /> 
+<br />
+
         </p>
       </div>
 

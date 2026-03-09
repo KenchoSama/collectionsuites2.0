@@ -7,7 +7,6 @@ import "@/styles/fonts/aviano.css"
 export default function HomeMembers() {
   return (
     <section className="relative w-full h-[clamp(400px,64vh,656px)] overflow-hidden">
-
       {/* Background Image */}
       <Image
         src="/HomeMembers.png"
@@ -23,9 +22,8 @@ export default function HomeMembers() {
       {/* Content */}
       <div className="relative z-10 h-full w-full flex items-center">
         <div className="px-8 md:px-20 max-w-lg text-white">
-
           {/* Title */}
-          <h2 className="aviano text-4xl md:text-5xl font-light mb-8">
+          <h2 className="aviano text-4xl md:text-5xl mb-8">
             MEMBERS <br /> ONLY
           </h2>
 
@@ -44,10 +42,8 @@ export default function HomeMembers() {
           >
             Discover
           </a>
-
         </div>
       </div>
-
     </section>
   )
 }

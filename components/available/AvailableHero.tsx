@@ -1,8 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
-import "@/styles/fonts/aviano.css"
 
 export default function AvailableHero() {
   return (
@@ -26,12 +24,14 @@ export default function AvailableHero() {
       <div className="absolute inset-0 flex items-center">
         <div className="max-w-xl px-8 md:px-20 text-left">
 
-          <h1 className="aviano text-white text-4xl md:text-6xl font-light tracking-[0.25em] mb-6 leading-tight">
+          <h1 className="aviano text-white text-4xl md:text-6xl tracking-[0.25em] mb-6 leading-tight">
             AVAILABLE <br /> SUITES
           </h1>
 
-          <p className="gill text-[#DEBE8F] text-xs md:text-sm leading-relaxed mb-8 tracking-wide max-w-md">
-            EXPLORE THE VISION AND CRAFTSMANSHIP BEHIND COLLECTIONSUITES
+          <p className="gill text-white text-xs md:text-sm leading-relaxed mb-8 tracking-wide max-w-md">
+            EXPLORE THE VISION AND <br />
+            CRAFTSMANSHIP BEHIND <br /> 
+            COLLECTIONSUITES <br />
           </p>
 
         </div>

@@ -5,33 +5,44 @@ import "@/styles/fonts/aviano.css"
 
 export default function OriginsHero() {
   return (
-    <section className="relative w-full h-[clamp(420px,75vh,780px)] overflow-hidden">
+    <section className="w-full bg-black">
 
-      {/* Background Image */}
-      <Image
-        src="/OriginsHero.png"
-        alt="Origins Collection Suites"
-        fill
-        priority
-        className="object-cover object-center"
-        sizes="100vw"
-      />
+      {/* Image section */}
+      <div className="relative w-full aspect-[1440/760] min-h-[380px] sm:min-h-[420px] md:min-h-[460px] lg:min-h-[560px] xl:min-h-[640px]">
+        
+        <Image
+          src="/OriginsHero.png"
+          alt="Origins Collection Suites"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/60" />
+        {/* Desktop overlay text */}
+        <div className="hidden md:block absolute left-[8%] top-[22%] z-10">
+          <h1 className="aviano text-white text-[clamp(1.8rem,3.6vw,3.5rem)] tracking-[0.16em] leading-none">
+            ORIGINS
+          </h1>
 
-      {/* Text (pushed down below header) */}
-      <div className="absolute top-24 md:top-32 left-8 md:left-16 z-10">
+          <p className="gill mt-3 text-[#DEBE8F] text-[clamp(0.8rem,1.1vw,1rem)] tracking-[0.06em]">
+            A Passion-Driven Vision
+          </p>
+        </div>
 
-        <h1 className="aviano text-white text-3xl md:text-5xl tracking-[0.25em] font-light">
+      </div>
+
+      {/* Mobile text section */}
+      <div className="md:hidden bg-black px-6 pt-4 pb-5">
+        <h1 className="aviano text-white text-xl tracking-[0.18em]">
           ORIGINS
         </h1>
 
-        <p className="gill text-[#DEBE8F] text-sm md:text-base tracking-wide mt-3">
+        <p className="gill mt-1 text-[#DEBE8F] text-sm tracking-wide">
           A Passion-Driven Vision
         </p>
-
       </div>
+
     </section>
   )
 }
