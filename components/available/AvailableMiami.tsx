@@ -7,53 +7,63 @@ import "@/styles/fonts/aviano.css"
 export default function AvailableMiami() {
   return (
     <section className="relative w-full">
-
-      {/* Background image (scales like your map now) */}
       <Image
         src="/miamiwide.png"
         alt="Miami"
         width={1920}
-        height={900} // adjust if needed to match your actual image ratio
+        height={900}
         className="w-full h-auto block"
         sizes="100vw"
         priority
       />
 
-      {/* Bottom fade overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-      {/* Right aligned content */}
-      <div className="absolute inset-0 flex items-center justify-end">
-        <div className="max-w-xl px-8 md:px-20 text-right">
+      {/* Bottom-right content */}
+      <div className="absolute inset-0 flex justify-end items-end pb-6 sm:pb-10 md:pb-16">
+        <div className="w-full max-w-[260px] sm:max-w-md md:max-w-xl px-3 sm:px-6 md:px-20 text-right">
 
-          <h2 className="aviano text-white text-3xl md:text-5xl font-light tracking-[0.25em] mb-5">
-            MIAMI
-          </h2>
+          {/* tighter spacing */}
+          <div className="space-y-3 sm:space-y-6 md:space-y-8">
 
-          <p className="gil text-white text-xs md:text-sm leading-relaxed mb-8 tracking-wide max-w-md">
-            Our flagship Miami Complex (Phase I) offers over [XX,XXX] square
-            feet across 38 exclusive suites. Now, we’re accelerating to meet
-            demand.
-          </p>
-          <h2 className="aviano text-white text-3xl md:text-5xl font-light tracking-[0.25em] mb-5">
-            MIAMI 2.0
-          </h2>
+            {/* MIAMI */}
+            <div>
+              <h2 className="aviano text-white text-lg sm:text-2xl md:text-5xl font-light tracking-[0.1em] md:tracking-[0.25em] mb-0 md:mb-4">
+  MIAMI
+</h2>
 
-          <p className="gil text-white text-xs md:text-sm leading-relaxed mb-8 tracking-wide max-w-md">
-            An expansion of our existing property, introducing 14 new luxury suites with enhanced amenities, larger spaces, and a shared clubhouse experience designed for connection and lifestyle.
-          </p>
-          
+              <p className="gil text-white text-[9px] sm:text-xs md:text-sm leading-snug tracking-normal max-w-[240px] sm:max-w-md ml-auto">
+                Our flagship Miami Complex (Phase I) offers over [XX,XXX] square
+                feet across 38 exclusive suites. Now, we’re accelerating to meet demand.
+              </p>
+            </div>
 
-          <Link
-            href="/availableMiami"
-            className="inline-block bg-[#9c8463] hover:bg-[#b89a74] transition px-8 md:px-10 py-3 text-xs md:text-sm tracking-widest uppercase text-white"
-          >
-            Discover Our Luxury Suites
-          </Link>
+            {/* MIAMI 2.0 */}
+            <div>
+              <h2 className="aviano text-white text-lg sm:text-2xl md:text-5xl font-light tracking-[0.1em] md:tracking-[0.25em] mb-0 md:mb-4">
+  MIAMI 2.0
+</h2>
 
+              <p className="gil text-white text-[9px] sm:text-xs md:text-sm leading-snug tracking-normal max-w-[240px] sm:max-w-md ml-auto">
+                An expansion of our existing property, introducing 14 new luxury
+                suites with enhanced amenities, larger spaces, and a shared clubhouse
+                experience designed for connection and lifestyle.
+              </p>
+            </div>
+
+            {/* BUTTON */}
+            <div>
+              <Link
+                href="/availableMiami"
+                className="inline-block bg-[#9c8463] hover:bg-[#b89a74] transition px-5 sm:px-8 md:px-10 py-2 text-[9px] sm:text-xs md:text-sm tracking-wide uppercase text-white"
+              >
+                Discover Suites
+              </Link>
+            </div>
+
+          </div>
         </div>
       </div>
-
     </section>
   )
 }
