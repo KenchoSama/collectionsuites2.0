@@ -4,22 +4,22 @@ import Image from "next/image"
 import { SuiteCard } from "@/components/available/SuiteCard"
 const SUITES = [
   {
-    id: "001",
-    name: "SUITE 001",
-    sqft: "2,869 Sq.Ft",
-    shapeSrc: "/suite-shapes/suite1.png",
+    id: "500",
+    name: "SUITE 500",
+    sqft: "3,099 Sq.Ft",
+    shapeSrc: "/suite-shapes/500.svg",
   },
   {
-    id: "002",
-    name: "SUITE 002",
-    sqft: "2,869 Sq.Ft",
-    shapeSrc: "/suite-shapes/suite2.png",
+    id: "501",
+    name: "SUITE 501",
+    sqft: "3,099 Sq.Ft",
+    shapeSrc: "/suite-shapes/501.svg",
   },
   {
-    id: "003",
-    name: "SUITE 003",
-    sqft: "2,869 Sq.Ft",
-    shapeSrc: "/suite-shapes/suite3.png",
+    id: "502",
+    name: "SUITE 502",
+    sqft: "3,099 Sq.Ft",
+    shapeSrc: "/suite-shapes/502.svg",
   },
 ]
 export default function AvailableSuiteGrid() {

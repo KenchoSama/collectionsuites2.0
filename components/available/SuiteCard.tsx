@@ -42,8 +42,8 @@ export function SuiteCard({ suite }: { suite: Suite }) {
         <Image
           src={suite.shapeSrc}
           alt={`${suite.name} layout`}
-          width={90}
-          height={90}
+          width={120}
+          height={120}
           className="object-contain opacity-90"
         />
       </div>

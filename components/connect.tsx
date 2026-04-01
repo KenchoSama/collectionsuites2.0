@@ -5,6 +5,38 @@ import { ChevronDown } from "lucide-react"
 
 export default function Connect() {
   const [interested, setInterested] = useState(false)
+  const [form, setForm] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    email: "",
+    message: "",
+  })
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setStatus("loading")
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, interestedInSuite: interested }),
+      })
+      if (!res.ok) throw new Error()
+      setStatus("success")
+      setForm({ firstName: "", lastName: "", phone: "", email: "", message: "" })
+      setInterested(false)
+    } catch {
+      setStatus("error")
+    }
+  }
 
   return (
     <section className="w-full bg-[#f2f2f2] py-10 md:py-24">
@@ -49,27 +81,51 @@ export default function Connect() {
 
           {/* Right column (form) */}
           <div className="lg:col-span-8">
-            <form className="w-full">
+            <form className="w-full" onSubmit={handleSubmit}>
               {/* Row 1 */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
-                <Field placeholder="First Name" />
-                <Field placeholder="Last Name" />
+                <Field
+                  name="firstName"
+                  placeholder="First Name"
+                  value={form.firstName}
+                  onChange={handleChange}
+                />
+                <Field
+                  name="lastName"
+                  placeholder="Last Name"
+                  value={form.lastName}
+                  onChange={handleChange}
+                />
               </div>
 
               {/* Row 2 */}
               <div className="mt-3 md:mt-6">
-                <Field placeholder="Phone Number" />
+                <Field
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={form.phone}
+                  onChange={handleChange}
+                />
               </div>
 
               {/* Row 3 */}
               <div className="mt-3 md:mt-6">
-                <Field placeholder="Email" type="email" />
+                <Field
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  value={form.email}
+                  onChange={handleChange}
+                />
               </div>
 
               {/* Message */}
               <div className="mt-3 md:mt-6 relative">
                 <textarea
+                  name="message"
                   placeholder="Message"
+                  value={form.message}
+                  onChange={handleChange}
                   className="gill w-full h-40 md:h-44 resize-none bg-[#d9d9d9] px-4 py-4 text-sm text-black placeholder:text-black/55 outline-none border-b border-[#9c8463]"
                 />
                 <ChevronDown className="absolute right-4 top-4 w-4 h-4 md:w-5 md:h-5 text-black/60" />
@@ -100,13 +156,25 @@ export default function Connect() {
               </div>
 
               {/* Submit */}
-              <div className="mt-8 md:mt-10 flex justify-center">
+              <div className="mt-8 md:mt-10 flex flex-col items-center gap-3">
                 <button
                   type="submit"
-                  className="bg-[#9c8463] hover:bg-[#b89a74] transition px-14 md:px-20 py-3 text-[11px] md:text-sm tracking-[0.18em] uppercase text-white"
+                  disabled={status === "loading"}
+                  className="bg-[#9c8463] hover:bg-[#b89a74] disabled:opacity-60 transition px-14 md:px-20 py-3 text-[11px] md:text-sm tracking-[0.18em] uppercase text-white"
                 >
-                  Submit
+                  {status === "loading" ? "Submitting..." : "Submit"}
                 </button>
+
+                {status === "success" && (
+                  <p className="gill text-xs text-black/60 tracking-wide">
+                    Thank you — we&apos;ll be in touch shortly.
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="gill text-xs text-red-500 tracking-wide">
+                    Something went wrong. Please try again.
+                  </p>
+                )}
               </div>
             </form>
           </div>
@@ -119,13 +187,22 @@ export default function Connect() {
 function Field({
   placeholder,
   type = "text",
+  name,
+  value,
+  onChange,
 }: {
   placeholder: string
   type?: string
+  name: string
+  value: string
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }) {
   return (
     <input
       type={type}
+      name={name}
+      value={value}
+      onChange={onChange}
       placeholder={placeholder}
       className="gill w-full bg-[#d9d9d9] px-4 py-3 text-sm text-black placeholder:text-black/55 outline-none border-b border-[#9c8463]"
     />

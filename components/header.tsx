@@ -19,7 +19,7 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
       {/* Desktop Header */}
-      <div className="hidden md:grid container mx-auto px-6 py-4 grid-cols-[auto_1fr_auto] items-center gap-8">
+<div className="hidden md:flex w-full px-6 py-4 items-center justify-between">
         {/* Left: Logo + Brand */}
         <Link
           href="/"
@@ -40,8 +40,7 @@ export function Header() {
           </span>
         </Link>
 
-        {/* Middle spacer */}
-        <div />
+     
 
         {/* Right: Navigation */}
         <nav className="flex items-center justify-end gap-8 lg:gap-10 text-[#DEBE8F] font-gill text-base tracking-widest whitespace-nowrap">

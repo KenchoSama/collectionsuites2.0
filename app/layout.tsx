@@ -32,8 +32,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${montserrat.variable} ${cinzel.variable}`}>
-      <body className="font-sans antialiased">
-        {children}
+<body className="font-sans antialiased" suppressHydrationWarning>
+          {children}
         <Analytics />
       </body>
     </html>
