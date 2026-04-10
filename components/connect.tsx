@@ -89,7 +89,6 @@ export default function Connect() {
                   placeholder="First Name"
                   value={form.firstName}
                   onChange={handleChange}
-                  required
                 />
                 <Field
                   name="lastName"
@@ -117,7 +116,6 @@ export default function Connect() {
                   type="email"
                   value={form.email}
                   onChange={handleChange}
-                  required
                 />
               </div>
 
@@ -192,14 +190,12 @@ function Field({
   name,
   value,
   onChange,
-  required,
 }: {
   placeholder: string
   type?: string
   name: string
   value: string
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-  required?: boolean
 }) {
   return (
     <input
@@ -208,7 +204,6 @@ function Field({
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      required={required}
       className="gill w-full bg-[#d9d9d9] px-4 py-3 text-sm text-black placeholder:text-black/55 outline-none border-b border-[#9c8463]"
     />
   )
