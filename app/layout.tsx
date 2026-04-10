@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Montserrat, Cinzel } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-
+//test
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
