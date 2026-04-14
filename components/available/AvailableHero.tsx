@@ -25,7 +25,7 @@ export default function AvailableHero() {
           <div className="space-y-3 sm:space-y-6 md:space-y-8">
 
             <div>
-              <h1 className="aviano text-white text-xl sm:text-3xl md:text-6xl tracking-[0.1em] md:tracking-[0.25em] mb-0 md:mb-6 leading-tight">
+              <h1 className="aviano text-white text-xl sm:text-3xl md:text-6xl mb-0 md:mb-6 leading-tight" style={{ letterSpacing: '-0.02em' }}>
                 AVAILABLE <br /> SUITES
               </h1>
 

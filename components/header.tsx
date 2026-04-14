@@ -3,10 +3,12 @@
 import { useState, useCallback } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, ArrowRight } from "lucide-react"
+import { Menu, X } from "lucide-react"
+import { usePathname } from "next/navigation"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   const scrollToContact = useCallback(() => {
     const el = document.getElementById("connect")
@@ -16,15 +18,23 @@ export function Header() {
     setMobileMenuOpen(false)
   }, [])
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (pathname === href) {
+      e.preventDefault()
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
       {/* Desktop Header */}
-<div className="hidden md:flex w-full px-6 py-4 items-center justify-between">
+      <div className="hidden md:flex w-full px-6 py-4 items-center justify-between">
         {/* Left: Logo + Brand */}
         <Link
           href="/"
           aria-label="Collection Suites Home"
           className="z-10 flex items-center gap-3 min-w-0"
+          onClick={(e) => handleNavClick(e, "/")}
         >
           <Image
             src="/CollectionSuiteLogo.png"
@@ -40,19 +50,17 @@ export function Header() {
           </span>
         </Link>
 
-     
-
         {/* Right: Navigation */}
         <nav className="flex items-center justify-end gap-8 lg:gap-10 text-[#DEBE8F] font-gill text-base tracking-widest whitespace-nowrap">
-          <Link href="/availableSuite" className="hover:text-white transition-colors">
+          <Link href="/availableSuite" className="hover:text-white transition-colors" onClick={(e) => handleNavClick(e, "/availableSuite")}>
             Suites
           </Link>
 
-          <Link href="/features" className="hover:text-white transition-colors">
+          <Link href="/features" className="hover:text-white transition-colors" onClick={(e) => handleNavClick(e, "/features")}>
             Features
           </Link>
 
-          <Link href="/about" className="hover:text-white transition-colors">
+          <Link href="/about" className="hover:text-white transition-colors" onClick={(e) => handleNavClick(e, "/about")}>
             About
           </Link>
 
@@ -70,7 +78,6 @@ export function Header() {
             className="flex items-center gap-2 hover:text-white transition-colors"
           >
             Members
-            <ArrowRight className="w-5 h-5 shrink-0" />
           </a>
         </nav>
       </div>
@@ -81,6 +88,7 @@ export function Header() {
           href="/"
           aria-label="Collection Suites Home"
           className="z-10 flex items-center gap-3 min-w-0"
+          onClick={(e) => handleNavClick(e, "/")}
         >
           <Image
             src="/CollectionSuiteLogo.png"
@@ -108,14 +116,15 @@ export function Header() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <nav className="md:hidden bg-black/95 border-t border-white/10 px-6 py-6 flex flex-col gap-5 text-[#DEBE8F] font-gill text-base tracking-widest">
-          <Link href="/availableSuite" className="hover:text-white transition-colors">
+          <Link href="/availableSuite" className="hover:text-white transition-colors" onClick={(e) => handleNavClick(e, "/availableSuite")}>
             Suites
           </Link>
 
-          <Link href="/features" className="hover:text-white transition-colors">
+          <Link href="/features" className="hover:text-white transition-colors" onClick={(e) => handleNavClick(e, "/features")}>
             Features
           </Link>
-          <Link href="/about" className="hover:text-white transition-colors">
+
+          <Link href="/about" className="hover:text-white transition-colors" onClick={(e) => handleNavClick(e, "/about")}>
             About
           </Link>
 
@@ -133,7 +142,6 @@ export function Header() {
             className="flex items-center gap-2 hover:text-white transition-colors"
           >
             Members
-            <ArrowRight className="w-5 h-5" />
           </a>
         </nav>
       )}

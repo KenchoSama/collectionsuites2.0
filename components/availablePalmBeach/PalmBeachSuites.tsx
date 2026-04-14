@@ -14,7 +14,7 @@ export default function AvailableHero() {
         {/* LEFT CONTENT */}
         <div className="w-full lg:w-1/2 text-left">
           {/* Title */}
-          <h2 className="aviano text-black text-3xl md:text-5xl tracking-[0.2em] font-light mb-6">
+          <h2 className="aviano text-black text-3xl md:text-5xl" style={{ letterSpacing: '-0.02em' }}>
             AVAILABLE SUITES
           </h2>
 

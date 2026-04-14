@@ -11,7 +11,7 @@ export default function AboutHistory() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start justify-between gap-10 mb-6">
 
         {/* Left Title */}
-        <h2 className="aviano text-black text-3xl md:text-5xl tracking-[0.25em]">
+        <h2 className="aviano text-black text-3xl md:text-5xl" style={{ letterSpacing: '-0.02em' }}>
           HISTORY
         </h2>
 

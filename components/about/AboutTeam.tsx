@@ -63,7 +63,7 @@ export default function AboutTeam() {
     <section className="w-full bg-white py-16 md:py-20">
       {/* Top row */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start justify-between gap-10">
-        <h2 className="aviano text-black text-3xl md:text-5xl tracking-[0.25em] leading-tight">
+        <h2 className="aviano text-black text-3xl md:text-5xl tracking-[0.25em] leading-tight" style={{ letterSpacing: '-0.02em' }}>
           EXECUTIVE
           <br />
           TEAM

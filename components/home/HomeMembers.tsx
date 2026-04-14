@@ -23,14 +23,13 @@ export default function HomeMembers() {
       <div className="relative z-10 h-full w-full flex items-center">
         <div className="px-8 md:px-20 max-w-lg text-white">
           {/* Title */}
-          <h2 className="aviano text-4xl md:text-5xl mb-8">
+          <h2 className="aviano text-4xl md:text-5xl mb-8" style={{ letterSpacing: '-0.02em' }}>
             MEMBERS <br /> ONLY
           </h2>
 
           {/* Subtext + arrow */}
           <div className="gill text-[#DEBE8F] text-sm md:text-base flex items-center gap-3 mb-10">
             <span>Sign In. Start Up.</span>
-            <ArrowRight className="w-5 h-5" />
           </div>
 
           {/* Discover Button */}

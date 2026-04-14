@@ -19,21 +19,16 @@ export function HomeAvailable() {
         </div>
 
         {/* CONTENT */}
-        <div className="w-full md:w-[40%] flex flex-col justify-center md:justify-end items-center md:items-end px-10 md:px-16 pb-16 pt-12 bg-white text-center md:text-right order-1 md:order-2">
+        <div className="w-full md:w-[40%] flex flex-col justify-center items-center px-10 md:px-16 pb-16 pt-12 bg-white text-center order-1 md:order-2">
 
           {/* Title */}
-          <h2 className="aviano text-black text-2xl md:text-3xl tracking-[0.28em] mb-4 leading-tight">
+          <h2 className="aviano text-black text-2xl md:text-3xl tracking-[0.28em] mb-4 leading-tight" style={{ letterSpacing: '-0.02em' }}>
             AVAILABLE<br />SUITES
           </h2>
 
-          {/* Subtitle */}
-          <div className="flex items-center justify-center md:justify-end gap-2 text-sm text-[#DEBE8F] mb-10 font-aviano">
-            <span>Explore the Suites.</span>
-            <ArrowRight className="w-4 h-4 text-[#DEBE8F]" />
-          </div>
 
           {/* Button */}
-          <div className="w-full flex justify-center md:justify-center">
+          <div className="w-full flex justify-center">
             <Link
               href="/availableSuite"
               className="bg-[#c7a97b] hover:bg-[#b89a6c] text-white text-xs tracking-widest uppercase px-8 py-3 transition-colors"

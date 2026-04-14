@@ -21,7 +21,7 @@ export default function MiamiHero() {
 
       {/* Content aligned to bottom right */}
       <div className="absolute inset-0 flex items-end justify-end px-8 md:px-16 pb-12 md:pb-16">
-        <h1 className="aviano text-white text-3xl md:text-5xl tracking-[0.25em] font-light">
+        <h1 className="aviano text-white text-3xl md:text-5xl" style={{ letterSpacing: '-0.02em' }}>
           MIAMI 2.0
         </h1>
       </div>

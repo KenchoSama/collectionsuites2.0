@@ -16,8 +16,9 @@ export default function FeaturesPage() {
 
       <FeaturesClubhouse />
 
-      <Connect />
-
+      <div id="connect">
+        <Connect />
+      </div>
       <Footer2 />
     </main>
   )

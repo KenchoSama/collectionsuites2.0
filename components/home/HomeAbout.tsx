@@ -21,7 +21,7 @@ export default function HomeAbout() {
         <div className="max-w-xl px-8 md:px-20 text-center md:text-right text-white">
 
           {/* Title */}
-          <h2 className="aviano text-3xl md:text-5xl mb-6">
+          <h2 className="aviano text-3xl md:text-5xl mb-8 tracking-[-0.08em]" style={{ letterSpacing: '-0.02em' }}>
             ABOUT
           </h2>
 

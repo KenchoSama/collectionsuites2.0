@@ -57,7 +57,7 @@ export function PressSection() {
       <div className="relative mx-auto w-full max-w-6xl px-6 py-14">
         {/* Header row */}
         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-          <h2 className="text-4xl font-light tracking-[0.2em] text-white md:text-5xl">
+          <h2 className="text-4xl font-light text-white md:text-5xl">
             PRESS
           </h2>
 

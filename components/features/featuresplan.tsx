@@ -19,7 +19,7 @@ export default function FeaturesPlan() {
 
       {/* Title */}
       <div className="text-center mt-6 md:mt-8">
-        <h2 className="aviano text-black text-2xl md:text-4xl tracking-[0.18em]">
+        <h2 className="aviano text-black text-2xl md:text-4xl" style={{ letterSpacing: '-0.02em' }}>
           FLOOR PLANS
         </h2>
       </div>

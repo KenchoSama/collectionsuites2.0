@@ -23,7 +23,7 @@ export default function AvailablePalmBeach() {
         <div className="w-full max-w-[260px] sm:max-w-md md:max-w-xl px-3 sm:px-6 md:px-20 text-left">
           <div className="space-y-3 sm:space-y-6 md:space-y-8">
             <div>
-              <h2 className="aviano text-white text-lg sm:text-2xl md:text-5xl font-light tracking-[0.1em] md:tracking-[0.25em] mb-0 md:mb-5">
+              <h2 className="aviano text-white text-lg sm:text-2xl md:text-5xl font-light" style={{ letterSpacing: '-0.02em' }}>
                 PALM <br /> BEACH
               </h2>
 

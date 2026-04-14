@@ -23,7 +23,7 @@ export function HomeHero() {
         <div className="absolute inset-0 flex flex-col items-center justify-end px-6 pb-12 md:pb-16 gap-4">
 
           {/* Main Tagline */}
-          <h1 className="aviano text-white tracking-[0.35em] text-2xl md:text-3xl text-center">
+          <h1 className="aviano text-white text-2xl md:text-3xl text-center" style={{ letterSpacing: '0.05em' }}>
           Revolutionizing the Art of Collecting          </h1>
 
           {/* ONLY AT */}

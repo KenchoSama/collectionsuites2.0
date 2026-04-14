@@ -25,7 +25,7 @@ export default function AboutToday() {
         <div className="absolute inset-0 flex items-center justify-end px-8 md:px-16">
           <div className="max-w-md text-right text-white">
 
-            <h2 className="aviano text-3xl md:text-5xl tracking-[0.25em] font-light">
+            <h2 className="aviano text-3xl md:text-5xl font-light" style={{ letterSpacing: '-0.02em' }}>
               TODAY
             </h2>
 

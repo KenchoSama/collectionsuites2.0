@@ -21,7 +21,7 @@ export default function OriginsHero() {
 
         {/* Desktop overlay text */}
         <div className="hidden md:block absolute left-[8%] top-[22%] z-10">
-          <h1 className="aviano text-white text-[clamp(1.8rem,3.6vw,3.5rem)] tracking-[0.16em] leading-none">
+          <h1 className="aviano text-white text-[clamp(1.8rem,3.6vw,3.5rem)] tracking-[0.16em] leading-none" style={{ letterSpacing: '-0.02em' }}>
             ORIGINS
           </h1>
 

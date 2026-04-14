@@ -28,7 +28,7 @@ export default function AvailableMiami() {
 
             {/* MIAMI */}
             <div>
-              <h2 className="aviano text-white text-lg sm:text-2xl md:text-5xl font-light tracking-[0.1em] md:tracking-[0.25em] mb-0 md:mb-4">
+              <h2 className="aviano text-white text-lg sm:text-2xl md:text-5xl font-light mb-0 md:mb-4" style={{ letterSpacing: '-0.02em' }}>
   MIAMI
 </h2>
 
@@ -40,7 +40,7 @@ export default function AvailableMiami() {
 
             {/* MIAMI 2.0 */}
             <div>
-              <h2 className="aviano text-white text-lg sm:text-2xl md:text-5xl font-light tracking-[0.1em] md:tracking-[0.25em] mb-0 md:mb-4">
+              <h2 className="aviano text-white text-lg sm:text-2xl md:text-5xl font-light" style={{ letterSpacing: '-0.02em' }}>
   MIAMI 2.0
 </h2>
 

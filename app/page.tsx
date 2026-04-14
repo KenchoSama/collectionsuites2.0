@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <main>
       <Header />
+
       <HomeHero />
       <HomeAvailable />
       <HomeFeatures />

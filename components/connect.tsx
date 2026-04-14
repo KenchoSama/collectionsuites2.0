@@ -47,7 +47,7 @@ export default function Connect() {
           <div className="lg:col-span-4 px-1 sm:px-0">
 
             {/* Title */}
-            <h2 className="aviano text-[1.9rem] md:text-5xl leading-none tracking-[0.2em] text-black">
+            <h2 className="aviano text-[1.9rem] md:text-5xl text-black" style={{ letterSpacing: '-0.02em' }}>
               LET&apos;S CONNECT
             </h2>
 

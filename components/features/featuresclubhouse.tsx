@@ -54,8 +54,8 @@ export default function FeaturesClubhouse() {
       <section className="w-full bg-black py-16 md:py-24">
         <div className="max-w-[1800px] mx-auto">
           <div className="px-6 md:px-10 text-center">
-            <h2 className="aviano text-white text-3xl md:text-5xl tracking-[0.08em]">
-              THE PADDOCK CLUBHOUSE
+            <h2 className="aviano text-white text-3xl md:text-5xl" style={{ letterSpacing: '-0.02em' }}>
+              THE CLUBHOUSE
             </h2>
 
             <p className="gill text-white/75 text-sm md:text-lg leading-relaxed max-w-5xl mx-auto mt-8">
