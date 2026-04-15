@@ -4,7 +4,7 @@ import { notFound } from "next/navigation"
 import { Header } from "@/components/header"
 import Connect from "@/components/connect"
 import Footer2 from "@/components/Footer2"
-import { SuiteDetailsSplit } from "@/components/suites/SuiteDetailsSplit"
+import { SuiteDetails } from "@/components/suites/SuiteDetails"
 import { SUITES } from "@/lib/suites"
 
 export async function generateMetadata({
@@ -44,16 +44,7 @@ export default async function SuiteDetailPage({
         />
       </section>
 
-      {/* Suite Details */}
-      <SuiteDetailsSplit
-        suiteNumber={id}
-        sqft={suite.sqft}
-        price={suite.price}
-        levels={suite.levels}
-        // maxCarCapacity={suite.maxCarCapacity}
-        description={suite.description}
-        galleryImages={suite.galleryImages}
-      />
+      <SuiteDetails suite={suite} />
 
       <div id="connect">
         <Connect />
