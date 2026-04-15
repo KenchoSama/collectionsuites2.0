@@ -74,7 +74,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_502.png",
+    layoutSrc: "/images/SuiteLayout/CS_502.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 500 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 500 mezzanine" },
@@ -96,7 +96,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_503.png",
+    layoutSrc: "/images/SuiteLayout/CS_503.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 501 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 501 mezzanine" },
@@ -118,7 +118,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_504.png",
+    layoutSrc: "/images/SuiteLayout/CS_504.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 500 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 500 mezzanine" },
@@ -140,7 +140,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_505.png",
+    layoutSrc: "/images/SuiteLayout/CS_505.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 501 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 501 mezzanine" },
@@ -162,7 +162,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_506.png",
+    layoutSrc: "/images/SuiteLayout/CS_506.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 500 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 500 mezzanine" },
@@ -184,7 +184,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_507.png",
+    layoutSrc: "/images/SuiteLayout/CS_507.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 501 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 501 mezzanine" },
@@ -206,7 +206,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_508.png",
+    layoutSrc: "/images/SuiteLayout/CS_508.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 500 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 500 mezzanine" },
@@ -228,7 +228,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_509.png",
+    layoutSrc: "/images/SuiteLayout/CS_509.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 501 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 501 mezzanine" },
@@ -250,7 +250,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_510.png",
+    layoutSrc: "/images/SuiteLayout/CS_510.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 500 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 500 mezzanine" },
@@ -272,7 +272,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_511.png",
+    layoutSrc: "/images/SuiteLayout/CS_511.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 501 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 501 mezzanine" },
@@ -294,7 +294,7 @@ export const SUITES: Suite[] = [
       "The suites are finished with Black Granite and Swiss Wood flooring, while advanced smart home technology and LED lighting enhance the comfort and display of your collection.",
     ],
     heroImage: "/images/suite-607-hero.jpg",
-    layoutSrc: "/images/SuiteLayout/CS_512.png",
+    layoutSrc: "/images/SuiteLayout/CS_512.jpg",
     galleryImages: [
       { src: "/images/suite-607-gallery.jpg", alt: "Suite 500 luxury garage" },
       { src: "/images/suite-607-hero.jpg", alt: "Suite 500 mezzanine" },
