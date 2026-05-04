@@ -91,7 +91,7 @@ export default function AboutTeam() {
               {/* Image */}
               <div className="relative w-full aspect-square overflow-hidden bg-black/5">
                 <Image
-                  src="/AboutTeam.png"
+                  src="/images/About/AboutTeam.png"
                   alt={`${member.name} portrait`}
                   fill
                   className="object-cover"

@@ -29,7 +29,7 @@ export function SuiteCard({ suite }: { suite: Suite }) {
 
         {/* Logo */}
         <Image
-          src="/Logo.png"
+          src="/images/available/Logo.png"
           alt="Collection Suites"
           width={40}
           height={40}

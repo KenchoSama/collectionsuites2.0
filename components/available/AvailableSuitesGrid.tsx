@@ -27,7 +27,7 @@ export default function AvailableSuiteGrid() {
     <section className="relative w-full py-20 overflow-hidden">
 
       <Image
-        src="/AvailableSalesRoom.png"
+        src="/images/available/AvailableSalesRoom.png"
         alt="Available Suites"
         fill
         priority

@@ -7,7 +7,7 @@ export default function AvailableHero() {
     <section className="relative w-full">
 
       <Image
-        src="/OrangeCarRoom.png"
+        src="/images/available/OrangeCarRoom.png"
         alt="Available Suites"
         width={1920}
         height={1080}

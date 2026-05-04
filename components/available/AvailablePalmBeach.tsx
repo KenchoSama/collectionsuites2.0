@@ -8,7 +8,7 @@ export default function AvailablePalmBeach() {
   return (
     <section className="relative w-full">
       <Image
-        src="/palmbeachwide.png"
+        src="/images/available/palmbeachwide.png"
         alt="Palm Beach"
         width={1920}
         height={900}

@@ -11,7 +11,7 @@ export default function AboutToday() {
       {/* Desktop / tablet */}
       <div className="relative hidden md:block w-full">
         <Image
-          src="/AboutTodayNews.png"
+          src="/images/About/AboutTodayNews.png"
           alt="Collection Suites Today"
           width={1920}
           height={900}
@@ -55,7 +55,7 @@ export default function AboutToday() {
         {/* Image using LEFT HALF */}
         <div className="relative w-full h-[320px]">
           <Image
-            src="/AboutTodayNews.png"
+            src="/images/About/AboutTodayNews.png"
             alt="Collection Suites Today"
             fill
             className="object-cover object-left"

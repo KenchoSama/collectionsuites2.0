@@ -28,7 +28,7 @@ After decades immersed in the world of rare and significant acquisitions, Juan M
       {/* Image Strip (flush to bottom) */}
       <div className="relative w-full overflow-hidden">
         <Image
-          src="/AboutHistory.png"
+          src="/images/About/AboutHistory.png"
           alt="Collection Suites racing heritage"
           width={2000}
           height={600}

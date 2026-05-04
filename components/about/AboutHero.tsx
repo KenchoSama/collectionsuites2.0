@@ -11,7 +11,7 @@ export default function OriginsHero() {
       <div className="relative w-full aspect-[1440/760] min-h-[380px] sm:min-h-[420px] md:min-h-[460px] lg:min-h-[560px] xl:min-h-[640px]">
         
         <Image
-          src="/OriginsHero.png"
+          src="/images/About/OriginsHero.png"
           alt="Origins Collection Suites"
           fill
           priority

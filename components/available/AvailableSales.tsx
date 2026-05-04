@@ -38,7 +38,7 @@ export default function AvailableHero() {
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
           <div className="relative w-[260px] md:w-[340px] lg:w-[420px] h-[180px] md:h-[220px] lg:h-[260px]">
             <Image
-              src="/AvailableRooms.png"
+              src="/images/available/AvailableRooms.png"
               alt="Available Suites Layout"
               fill
               className="object-contain"

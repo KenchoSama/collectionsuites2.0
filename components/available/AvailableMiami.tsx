@@ -8,7 +8,7 @@ export default function AvailableMiami() {
   return (
     <section className="relative w-full">
       <Image
-        src="/miamiwide.png"
+        src="/images/available/miamiwide.png"
         alt="Miami"
         width={1920}
         height={900}
